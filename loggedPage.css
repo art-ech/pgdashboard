@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url(./blue-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1060C9;
+    font-weight: 900;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.header ul li{
+    margin: 0px 20px;
+}
+
+.header ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.logo img{
+    width: 200px;
+    cursor: pointer;
+}
+
+.profile{
+    margin: 20px;
+}
+
+.successful{
+    background-color: green;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.error{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.invalidDates{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#clock, #currentDate{
+    color: white;
+    font-weight: 900;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background: black;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.dates{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.btnINOut{
+    justify-content: center;
+    align-items: center;
+}
+
+.timeInSuccessful{
+    background-color: green;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.timeOutSuccessful{
+    background-color: green;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.container{
+    float: left;
+    width: 50%;
+}
+
+.container>form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    border: 5px solid white;
+    padding: 10px;
+    box-shadow: 10px 10px 10px;
+    background: #60A4FD;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,0.5)); */
+}
+
+p{
+    text-align: center;
+    font-weight: 900;
+    color: burlywood;
+    background-color: darkred;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#bundyClock{
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .3);
+}
+
+#leaveForm{
+    display: flex;
+    background: rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 200px;
+}
+
+
+button{
+    padding: 5px 3px;
+    color: white;
+    background-color: blue;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button:hover{
+    background-color: orange;
+    color: black;
+}
+
+button:active{
+    transform: scale(90%);
+}
+
+.bulletin{
+    float: right;
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.announcements .wh{
+    color: indigo;
+    letter-spacing: 5px;
+    animation: whatsHappening 5s linear infinite;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+@keyframes whatsHappening{
+    0%{
+        background-color: none;
+        letter-spacing: 10px;
+    }
+    50%{
+        background-color: none;
+        letter-spacing: 0px;
+    }
+    100%{
+        background-color: lightseagreen;
+        letter-spacing: 10px;
+    }
+}
+
+.announcements{
+    text-align: center;
+    background: whitesmoke;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.announcements h4{
+    margin: 10px 0px;
+    text-decoration: underline;
+    color: firebrick;
+    width: 50%;
+}
+
+.announcements a{
+    color: black;
+}
+
+.birthday a{
+    color: white;
+}
+
+.birthday img{
+    width: 100px;
+    height: 100px;
+    margin: 0px 5px;
+    border-radius: 500px;
+    border: white 5px solid;
+    cursor: pointer;
+}
+
+.birthday img:hover{
+    transform: scale(110%);
+    transition: .25s;
+    border-color: blue;
+}
+
+.birthday{
+    display: grid;
+    text-align: right;
+    background: rgba(0, 0, 255, .3);
+    border-radius: 10px;
+}
+
+.birthday label{
+    margin: 5px;
+}
+
+.birthday h3{
+    color: indigo;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+@media (max-width:550px) {
+    header{
+        font-size: 10px;
+    }
+
+    button{
+        width: 100px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passion Gate | Dashboard</title>
+    <link rel="stylesheet" href="loggedPage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="#"><img src="./Logo-Passion-Gate.png" alt=""></a></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Timesheet</a></li>
+                <li><a href="#">Payslip</a></li>
+                <li><a href="https://art-ech.github.io/pglandingpage">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="profile">
+        <h3>Hello <a href="#">Alvin</a>!</h3>
+    </div>
+    <div class="container">
+            <form id="bundyClock">
+                <p class="bc">Web Bundy</p>
+                <div id="currentDate"></div>
+                <div id="clock"></div>
+                <div class="btnINOut">
+                    <button type="submit" id="timeIn">TIME-IN</button>
+                    <button type="submit" id="timeOut">TIME-OUT</button>
+                    <div class="timeInSuccessful"></div>
+                    <div class="timeOutSuccessful"></div>
+                </div>
+            </form>
+            <form id="leaveForm">
+                <p class="lf">Leave Form</p>
+                <label for="leaveType">Leave Type</label>
+                <select name="leaveType" id="leaveType">
+                    <option value="VLP">Vacation Leave - Paid</option>
+                    <option value="SLP">Sick Leave - Paid</option>
+                    <option value="VLU">Vacation Leave - Unpaid</option>
+                    <option value="SLU">Sick Leave - Unpaid</option>
+                    <option value="EL">Emergency Leave</option>
+                </select>
+                <div class="dates">
+                    <label for="leaveDateFrom">Date from</label>
+                    <input type="date" name="date" id="leaveDateFrom">
+                    <label for="leaveDateTo">Date to</label>
+                    <input type="date" name="date" id="leaveDateTo">
+                </div>
+                <button type="submit" id="leaveSubmit">File</button>
+                <div class="successful"></div>
+                <div class="error"></div>
+                <div class="invalidDates"></div>
+            </form>
+    </div>
+    <div class="bulletin">
+        <div class="announcements">
+            <h3 class="wh">What's happening</h3>
+            <h4>Announcement</h4>
+            <span>Please be informed that registration for flu vaccination ends in two days. Have you and your dependents registered. If you have any questions, please feel free to contact HR team via <a href="#">HumanResource@PassionGate.com</a>.</span>
+            <h4>Company-wide Summer Outing</h4>
+            <span>Everyone is invited to join and participate in our most anticipated summer outing this coming April 1. Please reach out to your supervisor for further details and instructions given per department.</span>
+        </div>
+        <div class="birthday">
+            <h3>Birthday Celebrants Today</h3>
+            <label>Greg Smith<img src="employee1.jpg" alt="employee1"><a href="#">Greet him/her..</a></label>
+            <label>Hanna Rays<img src="employee2.jpg" alt="employee2"><a href="#">Greet him/her..</a></label>
+            <label>Andy Taylor<img src="employee3.jpg" alt="employee3"><a href="#">Greet him/her..</a></label>
+        </div>
+        
+
+    <script src="loggedPage.js"></script>
+
+</body>
+</html>
